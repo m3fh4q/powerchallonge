@@ -357,6 +357,7 @@ class ParticipantsTests(unittest.TestCase):
                 'more than 1 participant in index output, check code')
     '''
 
+    '''Untested due to inconsistent result when using the API method
     def test_participants_randomize(self):
         myparams = {'name': self.random_list_of_str}
         challonge.participants.bulk_add(self.random_url, params=myparams)
@@ -380,7 +381,7 @@ class ParticipantsTests(unittest.TestCase):
                 str(participant['seed']) + ":" + participant['name'])
         #print(seed_list2)
         self.assertNotEqual(seed_list, seed_list2)
-
+    '''
 
 class MatchesTests(unittest.TestCase):
 
