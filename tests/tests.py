@@ -514,6 +514,7 @@ class MatchAttachmentsTests(unittest.TestCase):
         if isinstance(r2, list) == False:
             raise PowerChallongeError('Invalid output, check the code')
 
+    """Untested due to inconsistent effect when using the api method
     def test_matchattachments_create_non_asset(self):
         # Test will be performed using url
         r = challonge.matches.index(self.random_url)
@@ -527,6 +528,7 @@ class MatchAttachmentsTests(unittest.TestCase):
         myparams_new = {'url': r3[0]['url'],
                         'description': r3[0]['description']}
         self.assertEqual(myparams, myparams_new)
+    """
 
     '''Untested due to known issue, check readme
     def test_matchattachments_create_asset(self):
