@@ -623,7 +623,7 @@ class MatchAttachmentsTests(unittest.TestCase):
             self.random_url, match_id, attachment_id)
         myparams_new = {'asset_file_name': [r3]['asset_file_name']}
         self.assertEqual(myparams_simple, myparams_new2)
-    '''
+   
 
     def test_matchattachments_destroy(self):
         r = challonge.matches.index(self.random_url)
@@ -649,7 +649,7 @@ class MatchAttachmentsTests(unittest.TestCase):
             self.random_url, match_id)
         if len(r5) != 0:
             raise PowerChallongeError('Invalid output, check the code')
-
+ '''
 
 if __name__ == "__main__":
     unittest.main()
